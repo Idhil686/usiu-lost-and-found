@@ -1,0 +1,430 @@
+*{
+  margin:0px;
+}
+.navigationBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:green;
+  color: white;
+  padding : 10px 20px;
+  font-family: "Verdana", sans-serif;
+  border-bottom: 3px solid #ff9f1c;
+}
+
+.logoTop{
+  width: 110px;
+  height: auto;
+}
+
+.Menu{
+  display: flex;
+  list-style: none;
+  
+}
+
+.Menu > li{
+  margin: 0px 12px;
+  font-size: 1.1rem;
+
+}
+.Menu > li:hover {
+  color: #ff9f1c;
+  border-bottom: 2px solid #ff9f1c;
+}
+/*style for banner*/
+.bannerArea{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+.imageBanner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+
+}
+
+.bannerText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  background-color: rgba(54,45,5,0.9);
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 10px;
+  transform: translate(-50%,-50%);
+}
+
+.Services{
+  padding: 50px;
+}
+
+.servicesTitle{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.Card{
+  background: #ffffff;
+  width: 280px;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+
+.CardServices{
+  display: flex;
+  justify-content:center;
+  gap: 30px;
+  flex: wrap;
+
+}
+
+.Footer{
+  background-color:black;
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+.appLayout{
+  min-height:100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageContent{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-family: "Verdana", sans-serif;
+}
+
+.loginPage h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loginPage input {
+  margin: 10px 0;
+  padding: 8px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.loginPage button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginPage button:hover {
+  background-color: #006400;
+}
+
+.loginPage p {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: blue;
+  cursor: pointer;
+}
+
+.Contacts {
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Verdana", sans-serif;
+}
+
+.Contacts h1 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Cards layout (already used in services) */
+.CardServices {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Optional: card hover effect */
+.CardServices .card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+/* dashboard.css */
+.dashboard {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.dash-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dash-header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.logout {
+    padding: 8px 18px;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.welcome {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.dash-cards {
+    display: flex;
+    gap: 16px;
+}
+
+.dash-card {
+    flex: 1;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+}
+
+.dash-card span {
+    font-size: 28px;
+}
+
+.dash-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 6px;
+    color: #1a1a1a;
+}
+
+.dash-card p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.dash-card button {
+    padding: 9px 18px;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.dash-card button:hover {
+    background-color: #1b4332;
+}
+
+
+/* Report Page */
+.report-page {
+  padding: 40px;
+  font-family: "Verdana", sans-serif;
+}
+
+.toggle button {
+  margin: 5px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active-lost { background-color: #fee2e2; color: #dc2626; }
+.active-found { background-color: #dcfce7; color: green; }
+
+.report-page input,
+.report-page textarea {
+  display: block;
+  margin: 8px 0;
+  padding: 8px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.report-page button[type="submit"] {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back { color: blue; cursor: pointer; font-size: 0.9rem; }
+.report-page {
+  padding: 40px;
+  font-family: "Verdana", sans-serif;
+  background-color: #f0fff4;
+  min-height: 100vh;
+}
+
+
+/* Lost Items Page */
+.items-page {
+  padding: 50px;
+  font-family: "Verdana", sans-serif;
+}
+
+.items-page h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.items-sub {
+  text-align: center;
+  color: #888;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+}
+
+.items-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.item-card {
+  background: #ffffff;
+  width: 280px;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.item-card h2 { font-size: 1rem; margin: 8px 0; }
+.item-card p { color: #555; margin: 4px 0; font-size: 0.9rem; }
+.item-tag { font-size: 0.8rem; font-weight: bold; }
+.item-card.lost { border-top: 4px solid #dc2626; }
+.item-card.found { border-top: 4px solid green; }
+
+.contacts-section {
+    padding: 3rem 1.5rem;
+    background: #f5f5f3;
+    border-radius: 12px;
+}
+
+.contacts-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contacts-eyebrow {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #888780;
+    margin: 0 0 6px;
+}
+
+.contacts-title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: #ffffff;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+}
+
+.contact-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0 auto 12px;
+}
+
+.contact-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0 0 4px;
+}
+
+.contact-role {
+    font-size: 12px;
+    color: #888780;
+    margin: 0 0 12px;
+}
+
+.contact-divider {
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+}
+
+.contact-email {
+    font-size: 12px;
+    margin: 0;
+}
